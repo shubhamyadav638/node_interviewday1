@@ -1,7 +1,7 @@
 # Node.js Interview Questions - Day 1
 
 ## Q1. What is Node.js?
-1. Node.js is a JavaScript runtime environment that allows running JavaScript code outside the browser.
+1. node is a JavaScript runtime environment that allow run the code.
 2. It is built on Chrome's V8 JavaScript engine.
 3. Node.js is used for server-side programming.
 
