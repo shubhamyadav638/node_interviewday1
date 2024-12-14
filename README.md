@@ -1,27 +1,21 @@
 # Node.js Interview Questions - Day 1
 
 ## Q1. What is Node.js?
-**1**  node is a JavaScript runtime environment that allow run the code.
-**2**  Its build on Chrome V8 JavaScript engine. 
-**3** nodejs used server-side programming languages.
+**1** -- node is a JavaScript runtime environment that allow run the code.
+**2** -- Its build on Chrome V8 JavaScript engine. 
+**3**-- nodejs used server-side programming languages.
 
 ## Q2. What is the event loop in Node.js?
 The event loop in Nodejs that handles asynchronous operations.The event loop continuously checks for tasks like timer, ensuring smooth execution of asynchronous code.
-
----
 
 ## Q3. What are the core modules in Node.js?
 Core modules in Node.js are provide essential functionalities without needing external libraries.
 fs,http,path,os,event,url
 
----
-
 ## Q4. What is the purpose of the require() function in Node.js?
 The require() function is used to load modules in Nodejs. It allows you to include third-party modules in application.
 **ex**
 const fs = require('fs');
-
----
 
 ## Q5. What is the difference between require and import in Node.js?
 
@@ -36,8 +30,6 @@ A callback is a function passed as an argument to another function which is exec
 setTimeout(() => { 
     console.log('Callback Function in node here'); 
 }, 1000);
-
----
 
 ## Q7. What is npm in Node.js?
 npm (Node Package Manager) is the default package manager for Node.js. It is used to-
