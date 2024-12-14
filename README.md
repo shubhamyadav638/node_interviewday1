@@ -54,6 +54,33 @@ Initialize project: `npm i `
 Error handling in Nodejs are--
 1. **Callbacks**: Pass an error object as the first parameter.
 
-2. **Promises**: Use `.catch()` for error handling.
+   const fs = require('fs');
+fs.readFile('nonexistent.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.log( err.message);
+    return;
+  }
+  console.log(data);
+});
 
-3. **Async/Await**: Wrap the code in a `try-catch` block.
+3. **Promises**: Use `.catch()` for error handling.
+
+   const fs = require('fs').promises;
+fs.readFile('nonexistent.txt', 'utf8')
+  .then(data => console.log(data))
+  .catch(err => console.log( err.message));
+
+5. **Async/Await**: Wrap the code in a `try-catch` block.
+
+   const fs = require('fs').promises;
+async function readFile() {
+  try {
+    const data = await fs.readFile('nonexistent.txt', 'utf8');
+    console.log(data);
+  } catch (err) {
+    console.log( err.message);
+  }
+}
+
+readFile();
+
